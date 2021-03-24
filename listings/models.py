@@ -19,7 +19,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
-    image = models.ImageField(upload_to='/products')
+    image = models.ImageField(upload_to='\products')
     description = models.TextField()
     cloth = models.CharField(max_length=60)
     color = models.CharField(max_length=20)
