@@ -1,5 +1,5 @@
 """
-ASGI config for yuotku_project project.
+ASGI config for youtku_project project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'yuotku_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'youtku_project.settings')
 
 application = get_asgi_application()
